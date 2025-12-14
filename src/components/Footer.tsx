@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center mb-4">
-              <img alt="JobLink" className="h-10 w-auto" src="/lovable-uploads/da2fb042-a78f-46d4-a4e5-ac9062fe0be6.png" />
+              <img alt="JobLink" className="h-10 w-auto" src="/lovable-uploads/cb2891ae-2a7a-43a3-b656-3f705278f79b.png" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               {t.footer.description}
