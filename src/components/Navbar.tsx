@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <img alt="JobLink" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform" src="/lovable-uploads/e78b468d-82b0-49e2-89db-75362a35902a.png" />
+            <img alt="JobLink" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform" src="/lovable-uploads/27f0f954-b859-4134-9e9e-2b009a7e8109.png" />
           </Link>
 
           {/* Desktop Navigation */}
