@@ -12,50 +12,45 @@ import categoryBuilding from "@/assets/category-building.jpg";
 import categoryKitchen from "@/assets/category-kitchen.jpg";
 import categoryCleaning from "@/assets/category-cleaning-realistic.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
-
 const Index = () => {
-  const { t } = useLanguage();
+  const {
+    t
+  } = useLanguage();
   const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-    
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, {
+      passive: true
+    });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const categories = [
-    {
-      icon: Building2,
-      title: t.categories.hotels.title,
-      description: t.categories.hotels.description,
-      jobCount: 150,
-      image: categoryWarehouse,
-    },
-    {
-      icon: HardHat,
-      title: t.categories.construction.title,
-      description: t.categories.construction.description,
-      jobCount: 200,
-      image: categoryBuilding,
-    },
-    {
-      icon: ChefHat,
-      title: t.categories.plumbing.title,
-      description: t.categories.plumbing.description,
-      jobCount: 85,
-      image: categoryKitchen,
-    },
-    {
-      icon: HandHelping,
-      title: t.categories.helper.title,
-      description: t.categories.helper.description,
-      jobCount: 300,
-      image: categoryCleaning,
-    },
-  ];
+  const categories = [{
+    icon: Building2,
+    title: t.categories.hotels.title,
+    description: t.categories.hotels.description,
+    jobCount: 150,
+    image: categoryWarehouse
+  }, {
+    icon: HardHat,
+    title: t.categories.construction.title,
+    description: t.categories.construction.description,
+    jobCount: 200,
+    image: categoryBuilding
+  }, {
+    icon: ChefHat,
+    title: t.categories.plumbing.title,
+    description: t.categories.plumbing.description,
+    jobCount: 85,
+    image: categoryKitchen
+  }, {
+    icon: HandHelping,
+    title: t.categories.helper.title,
+    description: t.categories.helper.description,
+    jobCount: 300,
+    image: categoryCleaning
+  }];
   const stats = [{
     value: "10K+",
     label: t.stats.jobsPosted
@@ -92,15 +87,12 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative pt-20 lg:pt-24 overflow-hidden">
         {/* Parallax Background */}
-        <div 
-          className="absolute inset-0 transition-transform duration-100"
-          style={{
-            backgroundImage: `linear-gradient(to right, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.6)), url(${heroWorkersTeam})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.4}px)`,
-          }}
-        />
+        <div className="absolute inset-0 transition-transform duration-100" style={{
+        backgroundImage: `linear-gradient(to right, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.6)), url(${heroWorkersTeam})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        transform: `translateY(${scrollY * 0.4}px)`
+      }} />
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
         
         <div className="relative container mx-auto px-4 lg:px-8 py-16 lg:py-24">
@@ -133,7 +125,7 @@ const Index = () => {
             animationDelay: "300ms"
           }}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl opacity-100">
-                <img alt="Professional workforce in hotels, construction, plumbing, and helper services" className="w-full h-auto object-cover" src="/lovable-uploads/d0328e87-9585-4a15-8e7e-90ed37ace50d.png" />
+                <img alt="Professional workforce in hotels, construction, plumbing, and helper services" className="w-full h-auto object-cover" src="/lovable-uploads/6d5eb64e-c01c-450b-9812-43410b95bcd8.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
               </div>
               {/* Floating Stats Card */}
